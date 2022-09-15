@@ -4,6 +4,7 @@
   "description": "Kick start your node js servers within seconds",
   "author": "Nanthakumaran S <nanthankumaransenthil@gmail.com>",
   "main": "bin/bash.js",
+  "type": "module",
   "bin": {
     "node-server-starters": "bin/bash.js"
   },
@@ -16,7 +17,7 @@
     "chalk": "^5.0.1",
     "figlet": "^1.5.2",
     "inquirer": "^9.1.1",
-    "nanospinner": "^1.1.0",
-    "ncp": "^2.0.0"
+    "ncp": "^2.0.0",
+    "ora": "^6.1.2"
   }
 }
