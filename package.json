@@ -1,0 +1,22 @@
+{
+  "name": "node-server-starters",
+  "version": "1.0.0",
+  "description": "Kick start your node js servers within seconds",
+  "author": "Nanthakumaran S <nanthankumaransenthil@gmail.com>",
+  "main": "bin/bash.js",
+  "bin": {
+    "node-server-starters": "bin/bash.js"
+  },
+  "scripts": {
+    "start": "node bin/bash.js"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "figlet": "^1.5.2",
+    "inquirer": "^9.1.1",
+    "nanospinner": "^1.1.0",
+    "ncp": "^2.0.0"
+  }
+}
