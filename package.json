@@ -3,21 +3,36 @@
   "version": "1.0.0",
   "description": "Kick start your node js servers within seconds",
   "author": "Nanthakumaran S <nanthankumaransenthil@gmail.com>",
-  "main": "bin/bash.js",
+  "main": "./build/cli.js",
   "type": "module",
   "bin": {
-    "node-server-starters": "bin/bash.js"
+    "node-server-starters": "./build/cli.js"
   },
   "scripts": {
-    "start": "node bin/bash.js"
+    "start": "npx tsc && node build/index.js",
+    "build": "tsc",
+    "package": "pkg . --targets node14-macos-x64 --output hello"
   },
   "keywords": [],
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.0.1",
-    "figlet": "^1.5.2",
+    "edit-json-file": "^1.7.0",
     "inquirer": "^9.1.1",
     "ncp": "^2.0.0",
     "ora": "^6.1.2"
+  },
+  "devDependencies": {
+    "@types/edit-json-file": "^1.7.0",
+    "@types/inquirer": "^9.0.1",
+    "@types/ncp": "^2.0.5",
+    "@types/node": "^18.7.18",
+    "pkg": "^5.8.0",
+    "typescript": "^4.8.3"
+  },
+  "homepage": "https://github.com/nanthakumaran-s/node-server-starters",
+  "bugs": "https://github.com/nanthakumaran-s/node-server-starters/issues",
+  "pkg": {
+    "scripts": "build/**/*.js"
   }
 }
